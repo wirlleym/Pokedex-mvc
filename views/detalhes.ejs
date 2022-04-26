@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title> Detalhes </title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section id="detalhes">
+            <h1> <%= element.name %> </h1>
+            <iframe <%= element.iframe %>> </iframe>
+            <table>
+            
+                <thead>
+                    <th colspan="2"> Detalhes </th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> Name </td>
+                        <td> <%= element.name %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> Type </td>
+                        <td> <%= element.type %>  </td>
+                    </tr>
+                    
+                    <tr>
+                        <td> Image </td>
+                        <td> <%= element.Image %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> Description </td>
+                        <td> <%= element.Description %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> Heigth </td>
+                        <td> <%= element.heigth %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> Weigth </td>
+                        <td> <%= element.weigth %>  </td>
+                    </tr>
+
+                    <tr>
+                        <td> Category </td>
+                        <td> <%= category %>  </td>
+                    </tr>
+                       
+                    <tr>
+                        <td> Abilities </td>
+                        <td> <%= abilities %>  </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

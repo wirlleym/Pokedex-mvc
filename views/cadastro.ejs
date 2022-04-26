@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Cadastro Pokédex</title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs')  %>  
+  <main>
+    <form method="post" action="/cadastro">
+        <fieldset id="field_main">
+            <legend> Register your pokemon </legend>
+          
+            <fieldset>
+                <input type="text" name="name">
+                <label for="name"> Name </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="type" name="type">
+                <label for="type"> Type </label>
+            </fieldset>
+
+            <fieldset>
+            <input type="url" id="image" name="image">
+            <label for="image">Link Image:</label>
+            </fieldset> 
+
+            <fieldset>
+                <input type="text" name="description">
+                <label for="text"> Description </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" name="height">
+                <label for="iframe"> Heigth </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" name="weight">
+                <label for="text"> Weigth </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" name="category">
+                <label for="text">Category </label>
+            </fieldset>
+
+            <fieldset>
+                <input type="text" name="abilities">
+                <label for="text">Abilities </label>
+            </fieldset>
+
+            <button type="submit"> To send </button>
+        </fieldset>
+    </form>
+
+    </section>
+  </main>
+    <%- include('./partials/footer.ejs')  %>
+</body>
+</html>
