@@ -1,1 +1,1 @@
-<img style="display: flex; justify-content: center;" src="/public/img/Pokédex_logo.png" alt="Pokedex"/>
+<img style= "display: flex; justify-content: center;" src="/public/img/Pokédex_logo.png" alt="Pokedex"/>
