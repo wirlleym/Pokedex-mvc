@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wirlleym/Pokedex.git"
+    "url": "git+https://github.com/wirlleym/Pokedex-mvc.git"
   },
   "author": "Wirlley Melo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wirlleym/Pokedex/issues"
+    "url": "https://github.com/wirlleym/Pokedex-mvc/issues"
   },
-  "homepage": "https://github.com/wirlleym/Pokedex#readme",
+  "homepage": "https://github.com/wirlleym/Pokedex-mvc#readme",
   "dependencies": {
     "ejs": "^3.1.7",
     "express": "^4.18.0"

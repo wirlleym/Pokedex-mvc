@@ -11,11 +11,10 @@ app.use(express.static(path.join(__dirname, "public")));
 //  <<Servidor>>
 // Para rodar servidor >>> terminal: npm run dev
 
-// const port = 3000 || "https://"
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(port, () => {  // rota
-  console.log(`Servidor rodando na porta ${port}`)
+app.listen(PORT, () => {  // rota
+  console.log(`Servidor rodando na porta ${PORT}`)
 });
 
 // app.listen(3000);
@@ -56,7 +55,6 @@ const pokedex = [
     abilities: "Inner Focus"
   }
 ]
-
 
 // app.get("/", function (req, res) { 
 //   res.send("Hello World");  //Testando Servidor

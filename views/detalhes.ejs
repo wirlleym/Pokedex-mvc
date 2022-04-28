@@ -1,70 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/style.css" rel="stylesheet">
-    <title> Detalhes </title>
-</head>
-
-<body>
-    <%- include('./partials/header.ejs') %>
-    <main>
-        <section id="detalhes">
-            <h1> <%= element.name %> </h1>
-            <iframe <%= element.iframe %>> </iframe>
-            <table>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/style.css" rel="stylesheet"> 
+        <title> Detalhes </title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <a href="/"> <li> Home </li> </a>
+                    <a href="/cadastro"> <li> Register </li> </a>
+                </ul>
+            </nav>
+        
+            <a href="/">
+                <img id="logo" src="/img/logo hello.gif" alt="Logo Hello Pokedex">
+            </a>
             
-                <thead>
-                    <th colspan="2"> Detalhes </th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Name </td>
-                        <td> <%= element.name %>  </td>
-                    </tr>
+            <h1><a href="/"> <li> Pokedex </li> </a></h1>
+        </header> 
+                <main>
+            <section id="detalhes">
+                <div>
+                    <img src="<%= element.image %>" alt="">
+                    <h2> <%= element.name %> </h2>
+                </div>
+                <table>
+                    <thead>
+                        <th colspan="2"> <%= element.name %> </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Type </td>
+                            <td> <%= element.type %>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Description </td>
+                            <td> <%= element.description %>  </td>
+                        </tr>
 
-                    <tr>
-                        <td> Type </td>
-                        <td> <%= element.type %>  </td>
-                    </tr>
-                    
-                    <tr>
-                        <td> Image </td>
-                        <td> <%= element.Image %>  </td>
-                    </tr>
+                        <tr>
+                            <td> Heigth </td>
+                            <td> <%= element.height %>  </td>
+                        </tr>
 
-                    <tr>
-                        <td> Description </td>
-                        <td> <%= element.Description %>  </td>
-                    </tr>
+                        <tr>
+                            <td> Weigth </td>
+                            <td> <%= element.weight %>  </td>
+                        </tr>
 
-                    <tr>
-                        <td> Heigth </td>
-                        <td> <%= element.heigth %>  </td>
-                    </tr>
-
-                    <tr>
-                        <td> Weigth </td>
-                        <td> <%= element.weigth %>  </td>
-                    </tr>
-
-                    <tr>
-                        <td> Category </td>
-                        <td> <%= category %>  </td>
-                    </tr>
-                       
-                    <tr>
-                        <td> Abilities </td>
-                        <td> <%= abilities %>  </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </section>
-    </main>
-</body>
-
+                        <tr>
+                            <td> Category </td>
+                            <td> <%= element.category %>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td> Abilities </td>
+                            <td> <%= element.abilities %>  </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
+    </body>
 </html>

@@ -1,3 +1,193 @@
-section {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald, Arial, serif;
+}
+body{
+    height: 100vh;
+    width: 98.6vw;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+header>a{
+    height: 80%;
+    width: 100%;
+}
+header>h1>a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header>h1>a>li{
+    list-style: none;
+
+}
+#logo {
+        height: 100%;
+        width: 100%; 
+        position: relative;
+
+      }
+
+nav {
+        height: 10%;
+        width: 100%;
+        background-color: blue;
+        /* padding: 10px; */
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    padding: 0 4%;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+li{
+    font-size: 23px;
+    color: white;
+    padding: 10px;
+}
+
+li:hover {
+            color: red;
+}
+
+h1 {
+    height: 10%;
+    width: 100%;
     background-color: blue;
+    color: white;
+    font-size: xx-large;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    color: white;
+    font-size: xx-large;
+}
+
+h2.info{
+    color: blueviolet;
+}
+
+main{
+    width: 100%;height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: red;
+}
+main input{
+    width: 60%;
+height: 70%;}
+
+main label{
+    color: white;
+    height: 100%;width: 15%;/* padding: 10px; */ 
+}
+section#cards {
+        height: 100%;width: 95%;display: flex;
+        justify-content: space-evenly;
+        padding: 1%;
+        align-items: flex-start;
+}
+
+section#cards div.card {
+        width: 15rem;
+        background-color: white;
+        box-shadow: 5px 5px 5px 5px #00000060;
+        padding: 1rem;
+}
+
+section#cards div.card:hover{
+    background-color: #ffe600;
+}
+
+section#cards div.card img{
+    width: 100%;
+}
+section#detalhes{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+section#detalhes>div{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+align-items: center;background: blue;}
+section#detalhes>div>img{
+    max-height: 90%;
+    aspect-ratio: 1;
+}
+section#detalhes>table{
+    height: 100%;
+    width: 50%;
+}
+form{
+    height: 95%;
+    width: 90%;
+    border: none;}
+fieldset#field_main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+fieldset#field_main>fieldset{
+    height: 10%;
+    width: 90%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tbody{
+    height: 95%;
+    width: 80%;
+}
+th{
+    color: white;
+    font-size: 25px;
+}
+tr{
+    height: 10%;
+    width: 90%;
+    font-size: 20px;
+}
+td{
+    height: 10%;
+    width: 40%;
+}
+footer{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
 }
