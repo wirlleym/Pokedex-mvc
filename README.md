@@ -3,7 +3,7 @@
 </p>
 
 
-## 💻 Descrição
+## 💻 Projeto
 
 Foi desenvolvido uma plataforma web para listagem e visualização de pokémons, todos os dados sobre os pokémons como nome, tipo, imagem, descrição e entre outras coisas, foram adquiridas do site oficial https://www.pokemon.com/br/pokedex/.
 
