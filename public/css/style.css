@@ -193,5 +193,6 @@ footer{
 }
 footer>a{
     color: white;
+    text-decoration: none;
     list-style-type: none;
 }
