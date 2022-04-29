@@ -17,6 +17,6 @@ Este projeto foi realizado com fins de aprendizado no curso de FullStack da Blue
 - `Node`
 
 
-📝 Licença
-Esse projeto está sob a licença: Mozilla Public License Version 2.0. 
+## Licença 📝
+Este projeto está sob a licença: Mozilla Public License Version 2.0. 
 Veja o arquivo LICENSE para mais detalhes.
